@@ -40,6 +40,7 @@ class BrokerServer:
             except:  # noqa
                 pass
 
+        self.running = False
         self.server.close()
         print("[!] Server stopped")
         sys.exit(0)
