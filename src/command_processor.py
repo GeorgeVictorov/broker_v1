@@ -5,9 +5,9 @@ from src.commands import (CREATE, EXIT, PUB, SUB, CreateTopicCommand,
 class CommandProcessor:
     def __init__(self):
         self.commands = {
-            CREATE: CreateTopicCommand,
-            PUB: PublishCommand,
-            SUB: SubscribeCommand,
+            CREATE: CreateTopicCommand(),
+            PUB: PublishCommand(),
+            SUB: SubscribeCommand(),
             EXIT: None
         }
 
