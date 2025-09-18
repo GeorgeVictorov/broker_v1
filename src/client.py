@@ -1,7 +1,8 @@
-import socket
-import threading
 import json
+import socket
 import sys
+import threading
+
 from src.commands import CREATE, EXIT, PUB, SUB
 
 HOST = "127.0.0.1"
@@ -78,7 +79,7 @@ def main():
         print("[!] Cannot connect to server")
         return
 
-    print(f"[+] Connected to server")
+    print("[+] Connected to server")
     threading.Thread(target=recv_messages, args=(sock,), daemon=True).start()
 
     try:

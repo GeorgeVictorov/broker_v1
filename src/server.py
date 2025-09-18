@@ -1,9 +1,10 @@
 import socket
-import threading
 import sys
-from topic_manager import TopicManager
-from command_processor import CommandProcessor
+import threading
+
 from client_handler import ClientHandler
+from command_processor import CommandProcessor
+from topic_manager import TopicManager
 
 HOST = "127.0.0.1"
 PORT = 65432
